@@ -15,6 +15,8 @@ public class Model {
     @Id
     private String Id;
 
+    private String name;
+
     private String Description;
 
     public Model(String id, String description) {
