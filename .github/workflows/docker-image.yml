@@ -23,6 +23,10 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build -t 194009/backend .
+      
+    - name: Push the Docker Image
+      run: docker push 194009/backend 
+      
       
     
