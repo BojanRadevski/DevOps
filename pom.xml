@@ -61,9 +61,11 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>backend</finalName>
     </build>
 
 </project>
