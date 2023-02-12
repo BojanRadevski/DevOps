@@ -10,6 +10,7 @@ import org.springframework.data.annotation.Id;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Model {
     @Id
@@ -19,8 +20,5 @@ public class Model {
 
     private String Description;
 
-    public Model(String id, String description) {
-        Id = id;
-        Description = description;
-    }
+
 }
