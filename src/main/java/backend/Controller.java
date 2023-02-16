@@ -15,6 +15,10 @@ public class Controller {
     @Autowired
     public Service service;
 
+    public Controller(Service service) {
+        this.service = service;
+    }
+
     @GetMapping("/list")
     public List<Model> findAll(){
         return service.findAll();
