@@ -24,5 +24,8 @@ public class Controller {
         return service.findAll();
     }
 
+    @GetMaping("/list2")
+    public List<Model> findAll2(){ return service.findAll(); }
+
 
 }
